@@ -6,4 +6,4 @@ secrets-bridge:
         CATTLE_URL
         VAULT_TOKEN
         VAULT_CUBBYPATH
-    commmand: server --vault-url ${VAULT_URL}
+    command: server --vault-url ${VAULT_URL}
