@@ -7,3 +7,4 @@ secrets-bridge:
     labels:
         io.rancher.container.create_agent: true
         io.rancher.container.agent.role: agent
+        io.rancher.scheduler.global: true
