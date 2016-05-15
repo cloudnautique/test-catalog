@@ -6,4 +6,13 @@ secrets-bridge:
         CATTLE_URL: ${CATTLE_URL}
         VAULT_TOKEN: ${VAULT_TOKEN}
         VAULT_CUBBYPATH: ${VAULT_CUBBYPATH}
-    command: server --vault-url ${VAULT_URL}
+    command: 
+        - server
+        - --vault-url
+        - ${VAULT_URL}
+        - --rancher-url
+        - $CATTLE_URL
+        - --rancher-secret
+        - ${CATTLE_SECRET_KEY}
+        - --rancher-access
+        - ${CATTLE_ACCESS_KEY}
