@@ -1,6 +1,6 @@
 secrets-bridge:
     image: rancher/secrets-bridge:v0.0.1-1
-    commmand: agent --vault-url ${SECRET_BRIDGE_SERVER}
+    commmand: agent --bridge-url ${BRIDGE_URL}
     labels:
         io.rancher.container.create_agent: true
         io.rancher.container.agent.role: agent
